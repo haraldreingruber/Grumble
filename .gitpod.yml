@@ -1,0 +1,15 @@
+# inspired by https://www.gitpod.io/docs/languages/dotnet
+
+image: gitpod/workspace-dotnet
+
+tasks:
+  - name: Restore & Build
+    init: |
+      # this step is not needed in our case
+      # dotnet dev-certs https 
+      dotnet restore
+      dotnet build
+
+vscode:
+  extensions:
+    - muhammad-sammy.csharp
